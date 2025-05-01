@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Canteen </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://st4.depositphotos.com/16061158/39264/v/450/depositphotos_392644810-stock-illustration-food-vector-icon-food-editable.jpg" alt="CST Canteen Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-icons">
+            <form action="http://www.google.com/search/" method="post" id="nav-form">
+                <input type="search" id="searchBar" placeholder="Search Here" name="q">
+                <button id="search-icon"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="header">
+            <h1>CST Canteen </h1>
+            <p>Order ahead and skip the lines</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="menu-categories">
+                <button class="category-button" data-category="main-meals">🍚 Main Meals</button>
+                <button class="category-button" data-category="quick-bites">🥪 Quick Bites</button>
+                <button class="category-button" data-category="beverages">🥤 Beverages</button>
+            </div>
+            
+            <!-- Main Meals Items -->
+            <div class="menu-items active" id="main-meals">
+                <div class="menu-item">
+                    <img src="https://bhutan-kitchen.com/wp-content/uploads/2024/08/Green-Chilli-Ema-Datshi-menu-item.png" alt="Ema Datshi">
+                    <h3>Ema Datshi</h3>
+                    <p>Traditional Bhutanese chili and cheese stew served with red rice</p>
+                    <div class="price">Nu. 120</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://media.sublimetrails.com/uploads/media/blog/bhutan-cuisine/shakam-shukam-datsi.png" alt="Shakam Datshi">
+                    <h3>Shakam Datshi</h3>
+                    <p>Dried beef cooked with cheese and chili</p>
+                    <div class="price">Nu. 150</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://bhutan-kitchen.com/wp-content/uploads/2024/08/Kewa-Datshi-menu-item-Bhutan-Kitchen-400x.png" alt="Kewa Datshi">
+                    <h3>Kewa Datshi</h3>
+                    <p>Potato cooked with cheese and chili</p>
+                    <div class="price">Nu. 100</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://img.taste.com.au/uMAyK77R/taste/2024/08/quick-mongolian-beef-fried-rice-in-bowl-201667-1.jpg" alt="Fried Rice">
+                    <h3>Vegetable Fried Rice</h3>
+                    <p>Stir-fried rice with mixed vegetables and egg</p>
+                    <div class="price">Nu. 110</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+            </div>
+            
+            <!-- Quick Bites Items -->
+            <div class="menu-items" id="quick-bites">
+                <div class="menu-item">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2024/04/HamSandwich-0d4e4ff.jpg" alt="Cheese Sandwich">
+                    <h3>Cheese Sandwich</h3>
+                    <p>Toasted bread with cheese and vegetables</p>
+                    <div class="price">Nu. 80</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg" alt="Momos">
+                    <h3>Vegetable Momos</h3>
+                    <p>Steamed dumplings with vegetable filling (6 pieces)</p>
+                    <div class="price">Nu. 90</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://vegecravings.com/wp-content/uploads/2017/03/Aloo-Samosa-Recipe-Step-By-Step-Instructions.jpg" alt="Samosa">
+                    <h3>Samosa</h3>
+                    <p>Crispy pastry with potato and pea filling (2 pieces)</p>
+                    <div class="price">Nu. 50</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="Images/french food.jpg" alt="French Fries">
+                    <h3>French Fries</h3>
+                    <p>Crispy potato fries with ketchup</p>
+                    <div class="price">Nu. 70</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+            </div>
+            
+            <!-- Beverages Items -->
+            <div class="menu-items" id="beverages">
+                <div class="menu-item">
+                    <img src="https://blessmyfoodbypayal.com/wp-content/uploads/2024/12/IMG_6800.png" alt="Butter Tea">
+                    <h3>Suja (Butter Tea)</h3>
+                    <p>Traditional Bhutanese salted butter tea</p>
+                    <div class="price">Nu. 40</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://districtmagazine.ie/wp-content/uploads/2023/03/coffeeangel_300752102_1218531998722398_734254983337448543_n.jpg" alt="Coffee">
+                    <h3>Hot Coffee</h3>
+                    <p>Freshly brewed coffee</p>
+                    <div class="price">Nu. 50</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/65223a8acc063-Milk%20Tea%20Cup%20Top%20View.png" alt="Milk Tea">
+                    <h3>Milk Tea</h3>
+                    <p>Traditional Bhutanese milk tea</p>
+                    <div class="price">Nu. 40</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://sstation.ae/wp-content/uploads/2023/01/Ue5db0ba79e0746c9a0bb5f466dff81c4M.webp" alt="Soft Drinks">
+                    <h3>Soft Drinks</h3>
+                    <p>Coca Cola, Sprite, Fanta (300ml)</p>
+                    <div class="price">Nu. 50</div>
+                    <button class="add-to-cart">Add to Order</button>
+                </div>
+            </div>
+            
+            <div class="order-section">
+                <div class="order-form">
+                    <h2>Place Your Order</h2>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pickup-time">Pickup Time</label>
+                            <input type="time" id="pickup-time" name="pickup-time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-instructions">Special Instructions</label>
+                            <textarea id="special-instructions" name="special-instructions" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="selected-items" id="selected-items">
+                            <h3>Your Order:</h3>
+                            <ul id="order-list"></ul>
+                            <div id="order-total">Total: Nu. 0</div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Footer -->
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Bhutanese</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Weekly Specials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Meal Plans</a></li>
+                        <li><a href="#">Nutritional Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <a href="#">Data settings</a>
+                <a href="#">Cookie settings</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms And Conditions</a>
+                <a href="#">Imprint</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function () {
+        const item = this.closest('.menu-item');
+        const itemData = {
+            image: item.querySelector('img').src,
+            title: item.querySelector('h3').textContent,
+            description: item.querySelector('p').textContent,
+            price: item.querySelector('.price').textContent
+        };
+
+        // Get current order or create new array
+        const currentOrder = JSON.parse(localStorage.getItem('orderItems')) || [];
+        currentOrder.push(itemData);
+
+        // Save updated order to localStorage
+        localStorage.setItem('orderItems', JSON.stringify(currentOrder));
+
+    });
+});
+
+    </script>
+    <script src="functional.js"></script>
+</body>
+</html>

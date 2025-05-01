@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST|CANTEEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://st4.depositphotos.com/16061158/39264/v/450/depositphotos_392644810-stock-illustration-food-vector-icon-food-editable.jpg" alt="Canteen Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-icons">
+            <form action="https://www.google.com/search" method="GET" id="nav-form">
+                <input type="text" id="searchBar" placeholder="Search Here" name="q">
+                <button type="submit" id="search-icon"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Two Column Layout -->
+    <section class="hero-container">
+        <div class="hero-left">
+            <h1>Study Hard. Eat Smart.</h1>
+            <p>Skip the lines and order ahead! Our Easy Food System lets you browse the menu, place orders, and pay online. Your food will be ready when you arrive - saving you time between classes!</p>
+            <a href="Menu.html" class="btn">Order Now</a>
+        </div>
+        <div class="hero-right">
+            <!-- Background image will be set via CSS -->
+        </div>
+    </section>
+
+    <!-- The rest of content remains single column -->
+    <section class="categories">
+        <h2 class="section-title">POPULAR MEALS</h2>
+        <p class="section-subtitle">Most Ordered Dishes This Week</p>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://bhutan-kitchen.com/wp-content/uploads/2024/08/Kewa-Datshi-menu-item-Bhutan-Kitchen-400x.png" alt="Kewa Datsi">
+            </div>
+            <div class="category-card">
+                <img src="https://br10.in/wp-content/uploads/2024/08/chowmin.png" alt="Chowmein">
+            </div>
+            <div class="category-card">
+                <img src="https://feastwithsafiya.com/wp-content/uploads/2022/03/chicken-curry-recipe.jpg" alt="Jasha Markhum">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">The Easy Food System is a game-changer! I can order during my morning lecture and pick up my lunch without waiting in line. It saves me at least 15 minutes every day.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="Images/photo_2025-03-18_23-47-43.jpg" alt="Tashi Gyeltshen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Tashi Gyeltshen</h4>
+                            <p>Software Engineering Department</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">As a busy professor, I appreciate being able to order my meals in advance. The menu variety is excellent, and the payment system is seamless. Highly recommend!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="Images/photo_2025-03-18_23-47-56.jpg" alt="Chimi Gyeltshen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Chimi Gyeltshen</h4>
+                            <p>Information Technology Department</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">I love that I can customize my orders through the app. The special dietary options are great for someone with food allergies like me. The canteen staff are always friendly too!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="Images/photo_2025-03-18_23-47-32.jpg" alt="Sonam Choejur">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sonam Choejur</h4>
+                            <p>Information Technology Department</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <a href="#" class="cta-btn">Download App Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-toggle" id="cart-toggle">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+    
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-header">
+            <h3>Your Orders</h3>
+            <div class="cart-close" id="cart-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-total">
+            <div class="total-amount">Total: Nu.<span id="cart-total">0</span></div>
+            <a href="#" class="checkout-btn" id="checkout-btn">Checkout Now</a>
+        </div>
+    </div>
+
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Bhutanese</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Weekly Specials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Meal Plans</a></li>
+                        <li><a href="#">Nutritional Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <a href="#">Data settings</a>
+                <a href="#">Cookie settings</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms And Conditions</a>
+                <a href="#">Imprint</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Cart state
+        let cart = [];
+    
+        // DOM elements
+        const cartOverlay = document.getElementById('cart-overlay');
+        const cartToggle = document.getElementById('cart-toggle');
+        const cartClose = document.getElementById('cart-close');
+        const cartItemsContainer = document.getElementById('cart-items-container');
+        const cartTotalElement = document.getElementById('cart-total');
+        const cartCountElement = document.getElementById('cart-count');
+        const checkoutBtn = document.getElementById('checkout-btn');
+    
+        // Toggle cart visibility
+        cartToggle.addEventListener('click', () => {
+            loadCartFromLocalStorage();
+            cartOverlay.classList.add('active');
+        });
+    
+        cartClose.addEventListener('click', () => {
+            cartOverlay.classList.remove('active');
+        });
+    
+        // Load cart from local storage
+        function loadCartFromLocalStorage() {
+            const storedItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+            cart = storedItems.map((item, index) => {
+                // Extract numeric price from the string (assuming format like "Nu.100")
+                const price = parseInt(item.price.replace(/\D/g, '')) || 0;
+                
+                return {
+                    id: index, // Use the array index as ID for simplicity
+                    name: item.title,
+                    price: price,
+                    image: item.image,
+                    quantity: 1,
+                    description: item.description
+                };
+            });
+            updateCart();
+        }
+    
+        // Remove item from cart
+        function removeFromCart(itemId) {
+            // Convert itemId to number since dataset attributes are strings
+            itemId = Number(itemId);
+            cart = cart.filter(item => item.id !== itemId);
+            updateLocalStorage();
+            updateCart();
+        }
+    
+        // Update cart UI
+        function updateCart() {
+            // Clear the container
+            cartItemsContainer.innerHTML = '';
+            
+            let total = 0;
+            
+            // Add each item to the UI
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <div class="cart-item-details">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <p class="cart-item-desc">${item.description}</p>
+                            <div class="cart-item-price">Nu.${item.price} x ${item.quantity}</div>
+                        </div>
+                    </div>
+                    <div class="cart-remove" data-id="${item.id}">
+                        <i class="fas fa-times"></i>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(itemElement);
+            });
+            
+            // Update total
+            cartTotalElement.textContent = total;
+            cartCountElement.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+            
+            // Add event listeners to remove buttons
+            document.querySelectorAll('.cart-remove').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const itemId = button.getAttribute('data-id');
+                    removeFromCart(itemId);
+                });
+            });
+        }
+    
+        // Update local storage when cart changes
+        function updateLocalStorage() {
+            // First get the current items from localStorage
+            const storedItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+            
+            // Filter out the removed item by comparing with our cart
+            const updatedItems = storedItems.filter((_, index) => {
+                return cart.some(cartItem => cartItem.id === index);
+            });
+            
+            localStorage.setItem('orderItems', JSON.stringify(updatedItems));
+        }
+    
+        // Checkout functionality
+        checkoutBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            
+            alert(`Order placed! Total: Nu.${cartTotalElement.textContent}`);
+            cart = [];
+            localStorage.removeItem('orderItems');
+            updateCart();
+            cartOverlay.classList.remove('active');
+        });
+    
+        // Initialize cart count on page load
+        function initializeCartCount() {
+            const storedItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+            cartCountElement.textContent = storedItems.length;
+        }
+    
+        // Initialize cart count when page loads
+        initializeCartCount();
+    </script>
+    <script src="functional.js"></script>
+</body>
+</html>

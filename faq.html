@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CST Canteen - FAQ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="https://st4.depositphotos.com/16061158/39264/v/450/depositphotos_392644810-stock-illustration-food-vector-icon-food-editable.jpg" alt="Canteen logo image">
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-icons">
+        <form action="http://www.google.com/search/" method="post" id="nav-form">
+            <input type="search" id="searchBar" placeholder="Search Here" name="q">
+            <button id="search-icon"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+  <div class="faq-container">
+    <div class="faq-header">
+      <h1>Frequent Asked Questions</h1>
+      <p>Find answers to the most common questions about our canteen</p>
+    </div>
+    
+    <div class="faq-search">
+      <input type="text" id="searchFaq" placeholder="Search for questions...">
+      <button id="searchBtn">🔍</button>
+    </div>
+    
+    <div class="tags">
+      <span class="tag active" data-filter="all">All</span>
+      <span class="tag" data-filter="hours">Hours</span>
+      <span class="tag" data-filter="menu">Menu</span>
+      <span class="tag" data-filter="payment">Payment</span>
+      <span class="tag" data-filter="events">Events</span>
+      <span class="tag" data-filter="other">Other</span>
+    </div>
+    
+    <div class="faq-list">
+      <div class="faq-item" data-category="hours">
+        <div class="faq-question">What are the operating hours of CST Canteen?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>CST Canteen is open <span class="highlight">Monday through Friday from 7:30 AM to 9:00 PM</span> and <span class="highlight">Saturday from 9:00 AM to 6:00 PM</span>. We're closed on Sundays and major holidays.</p>
+            <p>During finals week, we extend our hours until 11:00 PM on weekdays to support your late-night study sessions!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="menu">
+        <div class="faq-question">What food and drink options are available?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>We offer a wide variety of options including:</p>
+            <ul>
+              <li>Specialty coffee drinks (espresso, lattes, cold brew)</li>
+              <li>Fresh smoothies and juices</li>
+              <li>Breakfast items (bagels, pastries, breakfast sandwiches)</li>
+              <li>Lunch options (sandwiches, wraps, salads, soups)</li>
+              <li>Grab-and-go snacks</li>
+              <li>Vegetarian, vegan, and gluten-free options</li>
+            </ul>
+            <p>Our menu rotates seasonally and we feature weekly specials created by culinary students!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="payment">
+        <div class="faq-question">What payment methods are accepted?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>We accept multiple payment methods for your convenience:</p>
+            <ul>
+              <li>Cash</li>
+              <li>All major credit/debit cards</li>
+              <li>Mobile payments (mBob,mPay,etc)</li>
+              <li>The CST Canteen app</li>
+            </ul>
+            <p>Load money onto your app for a <span class="highlight">5% discount</span> on all purchases!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="menu">
+        <div class="faq-question">Do you accommodate dietary restrictions?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>Yes! We understand the importance of catering to various dietary needs. We offer:</p>
+            <ul>
+              <li>Vegetarian and vegan options</li>
+              <li>Gluten-free items</li>
+              <li>Dairy-free alternatives for all drinks</li>
+              <li>Nut-free preparation areas</li>
+              <li>Detailed allergen information available upon request</li>
+            </ul>
+            <p>Please inform our staff about any allergies or dietary restrictions so we can best accommodate your needs.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="events">
+        <div class="faq-question">Can I host events or study groups at CST Canteen?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>Absolutely! CST Canteen offers spaces for group activities:</p>
+            <ul>
+              <li>Small groups (4-8 people) can use our open seating area</li>
+              <li>Larger groups can reserve our <span class="highlight">meeting room</span> (capacity: 20 people)</li>
+              <li>Student clubs receive priority booking for official meetings</li>
+              <li>Special catering options available for events</li>
+            </ul>
+            <p>To reserve space, please fill out the form on our website or speak with a manager at least 48 hours in advance.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="other">
+        <div class="faq-question">Is there free Wi-Fi available?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>Yes! CST Canteen provides complimentary high-speed Wi-Fi for all customers. Simply connect to the <span class="highlight">"CST-Canteen-Guest"</span> network and accept the terms of service to get online.</p>
+            <p>Students and faculty can also access the secure campus network "CST-Secure" using their university credentials for enhanced security.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="other">
+        <div class="faq-question">Are there student employment opportunities?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>Yes! CST Canteen is largely staffed by students. We offer:</p>
+            <ul>
+              <li>Flexible work schedules that accommodate class times</li>
+              <li>Competitive campus wages starting at Nu.215/hour</li>
+              <li>Free meals during shifts</li>
+              <li>Valuable work experience</li>
+              <li>Management opportunities for long-term employees</li>
+            </ul>
+            <p>Applications are accepted year-round, with peak hiring periods at the beginning of each semester. Apply through the campus employment portal or in person at the canteen.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item" data-category="events">
+        <div class="faq-question">Do you host special events or promotions?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <p>We love creating special experiences for our campus community! Regular events include:</p>
+            <ul>
+              <li><span class="highlight">Open Mic Nights</span> - Every other Thursday from 7-9 PM</li>
+              <li><span class="highlight">Finals Week Fuel</span> - Extended hours and special discounts</li>
+              <li><span class="highlight">Themed Food Weeks</span> - Cultural cuisines featured monthly</li>
+              <li><span class="highlight">Coffee Tastings</span> - Learn about different roasts and brewing methods</li>
+              <li><span class="highlight">Student Art Showcase</span> - We display student artwork on our walls</li>
+            </ul>
+            <p>Follow us on social media or check our events board for upcoming special events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-info">
+      <h3>Still have questions?</h3>
+      <br>
+      <p>Contact us at <a href="mailto:info@cstcanteen.edu">info@cstcanteen.edu</a> or call +975 17376910</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/laxman.bro.319" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.tiktok.com/@laxumanghalley?_t=ZS-8ul8D78d3Lz&_r=1" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Background Overlay -->
+  <div class="overlay" id="overlay"></div>
+  <div class="footer">
+      <div class="footer-container">
+          <div class="footer-content">
+              <div class="footer-column">
+                  <h3>Products</h3>
+                  <ul>
+                      <li><a href="#">Food</a></li>
+                      <li><a href="#">Beverages</a></li>
+                      <li><a href="#">Snacks</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-column">
+                  <h3>Category</h3>
+                  <ul>
+                      <li><a href="#">Daily Specials</a></li>
+                      <li><a href="#">New Items</a></li>
+                      <li><a href="#">Weekly Picks</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-column">
+                  <h3>Canteen Info</h3>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Payment Options</a></li>
+                      <li><a href="#">Track Order</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Vouchers</a></li>
+                      <li><a href="#">Nutrition Info</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Follow us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="footer-bottom">
+          <div class="footer-bottom-links">
+              <a href="#">Data settings</a>
+              <a href="#">Cookie settings</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms And Conditions</a>
+              <a href="#">Imprint</a>
+          </div>
+      </div>
+  </div>
+<script src="functional.js"></script>
+</body>
+</html>
